@@ -49,7 +49,7 @@ app.post("/api/image", jsonParser, async (req, res) => {
 
 
 async function a() {
-    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setViewport({
         width: 960,
